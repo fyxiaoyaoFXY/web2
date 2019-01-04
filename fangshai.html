@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>水晶防晒</title>
+	<script src="./fangshai.js">
+	</script>
+	<style type="text/css">
+		#box{
+			width:820px;
+			height:410px;
+			position:relative;
+	       }
+
+		#img1{
+			width:410px;
+			height:410px;
+			position:absolute;
+			left:0;
+			top:0;
+			margin-left: 20px;
+			margin-top: 20px;
+			border:1px solid #d0cdc7;}
+
+		#slider{
+			width:150px;
+			height:150px;
+			position:absolute;
+			left:0;
+			top:0;
+			background:#CCC;
+			opacity:0.4;
+			cursor: move;
+			display:none; 
+			filter:alpha(opacity=40);}
+
+		#img2{
+			position:absolute;
+			right:-23px;
+			top:20px;
+			display:none; 
+			width:410px;
+			height:410px;
+			overflow:hidden;
+			border: 1px solid #d0cdc7;}
+
+		#Bimg{
+			position:absolute;
+			left:0;
+			top:0;}
+	</style>
+	<link rel="stylesheet" type="text/css" href="./fangshai.css">
+</head>
+<body>
+	<div class="whloe">
+			<div class="cover">
+				<div class="head">
+					<a href="#">帮5买，享帮帮</a>
+					<div class="heada" style="display: inline;float: left;">
+						<a href="#" style="width: 19px;height:19px;background:url(./dazuoyeimg/common_min.png)0 -31px; "></a>
+						<a href="#" style="width: 19px;height:19px;background:url(./dazuoyeimg/common_min.png)0 -52px; "></a>
+						<a href="#" style="width: 19px;height:19px;background:url(./dazuoyeimg/common_min.png)0 -75px; "></a>
+						<a href="#">登录</a>
+						<a href="#">注册</a>
+						<a href="#" style="background: url(./dazuoyeimg/common_min.png) no-repeat 0 -115px;padding-left:22px;">消息</a>
+						<a href="#" style="background: url(./dazuoyeimg/dingdan.jpg)no-repeat;padding-left:16px;">我的订单</a>
+						<a href="#">我的收藏</a>
+						<a href="#">帮钻兑换</a>
+						<a href="#" style="background: url(./dazuoyeimg/tp-my-phone.png)no-repeat;padding-left:16px;">手机版</a>
+						<a href="#">帮5淘</a>
+						<a href="#">客户服务</a>
+						<a href="#" style="background: url(./dazuoyeimg/gouwuche.jpg)no-repeat;padding-left:20px;">购物车</a>
+						<a href="#" style="color:#fe6c00;font-weight: bold;margin-left: 0px;padding-left: 5px;">0</a>
+					</div>
+					<div class="input">
+						<img src="./dazuoyeimg/logo_03.jpg">
+						<input type="text" class="ip" placeholder="输入商品网址或关键词，直通全网，快速帮5购！">
+						<div class="search">搜全网</div>
+						<div class="erji">
+							<a href="#" style="background: url(./dazuoyeimg/common_min.png) no-repeat 0 -95px;margin-left: 25px; height:19px;width: 19px;"></a>
+							<p style="font-size: 12px;display: inline-block;">400-085-0505</p>	
+						</div>
+						<div class="news">
+							<a href="#" style="background: url(./dazuoyeimg/common_min.png) no-repeat 0 -115px;margin-left: 25px; height:19px;width: 19px;"></a>
+							<p style="font-size: 12px;display: inline-block;">mc@b5m.com</p>	
+						</div>
+						<div class="ques">
+							<a href="#" style="background: url(./dazuoyeimg/wenhao.jpg) no-repeat;padding-left: 23px;float: left;margin-left: 5px;margin-top: 12px;height:22px;color:white;font-size: 13px;">常见问题</a>
+						</div>
+						<div class="list">
+							<ul>
+								<li><a href="#" style="color:red;width:50px;height:16px;margin-left: 18px;">洗发护发</a></li>
+								<li><a href="#" style="color:red;background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 60px;height:16px;padding-left: 8px;">日本纸尿裤</a></li>
+								<li><a href="#" style="color:#65648f;background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 40px;height:16px;padding-left: 8px;">身体乳</a></li>
+								<li><a href="#" style="color:#65648f;background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 48px;height:16px;padding-left: 8px;">内衣文胸</a></li>
+								<li><a href="#" style="color:#aca9d3;background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 55px;height:16px;padding-left: 8px;">iphone 6s</a></li>
+								<li><a href="#" style="color:#aca9d3;background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 50px;height:16px;padding-left: 8px;">iPad Air2</a></li>
+								<li><a href="#" style="color:#65648f;background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 42px;height:16px;padding-left: 8px;">牛仔裤</a></li>
+								<li><a href="#" style="color:#65648f;background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 32px;height:16px;padding-left: 8px;">奶粉</a></li>
+								<li><a href="#" style="color:#65648f;background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 45px;height:16px;padding-left: 8px;">防晒霜</a></li>
+								<li><a href="#" style="color:#65648f;background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 40px;height:16px;padding-left: 8px;">伞</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+				<div class="black">
+					<div style="height:43px;width:70px;background-color: red;text-align:center;margin:0 auto;margin-left:40px;line-height:43px;float:left;display: inline;">首页</div>
+					<ul>
+						<li>热门品牌</li>
+						<li>美妆个护</li>
+						<li>服饰鞋包</li>
+						<li>母婴生活</li>
+						<li>食品保健</li>
+						<li>韩国直邮</li>
+						<li>跨境购</li>
+					</ul>
+					<img style="position: absolute;bottom:2px;padding-left:15px;" src="./dazuoyeimg/ff_03.jpg">
+				</div>
+			</div>
+			<div class="middle">
+				<div class="xiangqing">
+					<div id="box">
+					    <div id="img1">
+					         <img id="gou" src="./dazuoyeimg/pp0.jpeg" width="410" height="410"/>
+					         <div id="slider"></div>
+					  	</div>
+				       
+					    <div id="img2">
+					        <img src="./dazuoyeimg/pp0.jpeg" width="800" height="800" id="Bimg"/>
+					    </div>
+				  	</div>
+					<div style="z-index: 10px;" class="meng">
+				  		<p>韩国 RE:CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</p>
+				  		<p style="color:#676660;font-size: 12px;margin-top: 5px;line-height:20px;">【限购三件】 超透明无痕防晒，防水防汗定妆，保湿降温不粘腻。水晶防晒喷雾，喷后皮肤水润，不油，不留白，更不会像防晒霜那样抹不开，非常实用，开始囤货吧。</p>
+				  		<p style="font-size:12px;margin-top:20px;margin-left:20px;">价格<span style="color: #ff0000;font-size: 13px;padding-left:60px;">¥71</span><span style="font-size:12px;padding-left:15px;text-decoration: line-through;">¥150</span></p>
+				  		<img style="margin-top: 20px;" src="./dazuoyeimg/ss_09.jpg">
+				  		<p style="margin-left: 20px;font-size: 12px;display: inline-block;">化妆品净含量</p>
+				  		<div id="ml" style="display: inline-block;margin-left: 20px;z-index: 20px;"onclick="onc()">150ml<img style="display: none;" src="./dazuoyeimg/duigou.png"></div>
+				  		<div id="ML" style="display: inline-block;margin-left:30px;z-index: 20px;"onclick="onc2()">200ml</div>
+				  		<p style="margin-left: 20px;font-size: 12px;margin-top: 40px;">数量</p>
+				  		<!-- <input type="button" value="+" id="p"  style="height: 32px;width: 25px;border:1px solid #d0cdc7;text-align: center;line-height: 30px;margin-left: 110px;display: inline-block;position: absolute;bottom:130px;"> -->
+				  		<input type="button" value="-" onclick="sub()" style="height: 32px;width: 25px;border:1px solid #d0cdc7;text-align: center;line-height: 30px;margin-left: 190px;display: inline-block;position: absolute;bottom:130px;z-index: 2;">
+				  		<input type="text" id="txt" value="1">
+				  		<button id="p"   style="height: 32px;width: 25px;border:1px solid #d0cdc7;text-align: center;line-height: 30px;margin-left: 110px;display: inline-block;position: absolute;bottom:130px;">+</button>
+				  		<p style="font-size: 12px;padding-left: 250px;position:absolute;bottom: 135px;"></style>件（库存5件）</p>
+				  		<p style="font-size:12px;margin-left:20px;margin-top: 50px;">销量</p>
+				  		<p style="color:#ff0754;display:inline-block;margin-left:80px;position: absolute;bottom:67px;">81件</p>
+				  		<p style="margin-top:10px;margin-left: 80px;font-size: 12px;">您已选择</p>
+				  		<div id="rl" style="position: absolute;left:170px;bottom: 35px;color:#fe6c00;">"150ml"</div>
+				  		<div style="display:inline-block;margin-top:20px;width: 150px;height: 40px;border:1px solid #ff0754;color:#ff0754;border-radius:5px;text-align:center;line-height:40px;">立即购买</div>
+				  		<input type="button" value="加入购物车" id="jr" style="display:inline-block;width:150px;height:40px;border:1px solid #ff0754;color:white;background-color:#ff0754;border-radius:5px;text-align:center;line-height: 40px;margin-left:50px;">
+				  	</div>
+				  	
+				</div>
+				<img src="./dazuoyeimg/a_07.jpg" style="position:absolute;left:50px;">
+				<img style="margin-left:1000px;position:absolute;bottom:503px;" src="./dazuoyeimg/ww_07.jpg">
+				<img style="position:absolute;bottom:600px;left:50px;" src="./dazuoyeimg/spanl.jpg">
+				<img src="./dazuoyeimg/sp0.jpeg" style="position:absolute;bottom:600px;left:80px;" id="da">
+				<img onclick="two()" src="./dazuoyeimg/sp1.jpeg" style="position:absolute;bottom:600px;left:150px;" id="lian">
+				<img src="./dazuoyeimg/spanr.jpg" style="position:absolute;bottom:600px;left:400px;">
+			</div>	
+			<div id="bg"></div>
+				  		<div id="loginbox">
+            				<a style="margin-left:380px;text-decoration:none;color:black;" href="javascript:close()">x</a>
+            				<img src="./dazuoyeimg/rr11_02.jpg">
+            				<div style="display:inline-block;margin-top:30px;width: 150px;height: 40px;border:1px solid #ff0754;color:#ff0754;border-radius:5px;text-align:center;line-height:40px;margin-left:30px;">继续购买</div>
+            				<input type="button" value="加入购物车" id="jr" style="display:inline-block;width:150px;height:40px;border:1px solid #ff0754;color:white;background-color:#ff0754;border-radius:5px;text-align:center;line-height: 40px;margin-left:30px;">
+        				</div>
+		<div class="finally">
+			<img src="./dazuoyeimg/loginB.jpg" style="position:absolute;left:15px;">
+			<ul style="list-style: none;position:absolute;left:150px;top:50px;margin-left:50px;">
+				<li style="padding-bottom:8px;">购物指南</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">如何下单</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">帮5购流程</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">订单查询</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">物流配送</li>
+			</ul>
+			<ul style="list-style: none;position:absolute;left:300px;top:50px;margin-left:50px;float: left;">
+				<li style="padding-bottom:8px;">支付相关</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">支付方式</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">安全设置</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">账户信息</li>
+			</ul>
+			<ul style="list-style: none;position:absolute;left:450px;top:50px;margin-left:50px;float: left;">
+				<li style="padding-bottom:8px;">售后服务</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">取消订单</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">申请售后</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">退货流程</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">退款相关</li>
+			</ul>
+			<ul style="list-style: none;position:absolute;left:600px;top:50px;margin-left:50px;float: left;">
+				<li style="padding-bottom:8px;">VIP服务</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">VIP优惠</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">如何成为VIP</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">超级帮钻</li>
+			</ul>
+			<ul style="list-style: none;position:absolute;left:750px;top:50px;margin-left:50px;float: left;">
+				<li style="padding-bottom:8px;">帮韩品</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">韩国正品</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">闪电发货</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">帮韩品售后</li>
+			</ul>
+			<ul style="list-style: none;position:absolute;left:900px;top:50px;margin-left:50px;float: left;">
+				<li style="padding-bottom:8px;">更多</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">手机APP</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">帮5采APP</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">帮5淘插件</li>
+				<li style="padding-bottom:8px;font-size:13px;color: #666560;">其他</li>
+			</ul>
+			<img src="./dazuoyeimg/erweima.jpg" style="position:absolute;top:30px;left:1050px;">
+		</div>
+		<div class="zuihou">
+			<ul>
+				<li><a href="#" style="width:60px;height:16px;margin-left: 18px;">关于帮5买</a></li>
+				<li><a href="#" style="background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 60px;height:16px;padding-left:15px;">联系我们</a></li>
+				<li><a href="#" style="background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 40px;height:16px;padding-left:15px;">合作商家</a></li>
+				<li><a href="#" style="background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 48px;height:16px;padding-left:15px;">友情链接</a></li>
+				<li><a href="#" style="background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 55px;height:16px;padding-left:15px;">加入我们</a></li>
+				<li><a href="#" style="background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 50px;height:16px;padding-left:15px;">移动应用</a></li>
+				<li><a href="#" style="background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 42px;height:16px;padding-left:15px;">热门</a></li>
+				<li><a href="#" style="background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 32px;height:16px;padding-left:15px;">广告联盟</a></li>
+				<li><a href="#" style="background: url(./dazuoyeimg/shuxian.jpg) no-repeat;width: 45px;height:16px;padding-left:15px;">使用条款</a></li>
+			</ul>
+			<p>Copyright © 2011-2015 B5M.COM.ALL right reserved.Powered by B5Msoft Co.,Ltd.</p>
+			<p style="padding-top:10px;">增值电信业务经营许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书（沪）-非经营性-2013-0034沪卫（中医）网审【2015】10032号 沪ICP备11034776号-3|食品流通许可证：</p>
+			<p style="padding-top:10px;">SP3101151410301755</p>
+			<img style="padding-left:200px;" src="./dazuoyeimg/bo1.gif">
+			<img src="./dazuoyeimg/bo2.png">
+			<img src="./dazuoyeimg/bo3.gif">
+			<img src="./dazuoyeimg/bo4.png">
+			<img src="./dazuoyeimg/bo5.png">
+			<img src="./dazuoyeimg/bo6.png">
+			<img src="./dazuoyeimg/bo7.png">
+		</div>
+	</div>
+	<script type="text/javascript">
+		function two(){
+			var two=document.getElementById('box');
+			two.style.display="block";
+		}
+
+
+
+
+		function onc(){
+	    var ml = document.getElementById('ml');
+	    var ML = document.getElementById('ML');
+	    var rl = document.getElementById('rl');
+	    if (ml.style.border == "") {
+		ml.style.border = 2+"px "+"solid "+"#ff0853";
+		ml.style.background = "url(./dazuoyeimg/duigou.png) no-repeat right bottom";
+		rl.innerHTML = '"'+ml.innerHTML+'"';
+		if (ML.style.border!="") {
+			ML.style.border="";
+			ML.style.background="";
+		}
+	}	
+}
+
+        function onc2(){
+	 	var ml = document.getElementById('ml');
+		var ML = document.getElementById('ML');
+		var rl = document.getElementById('rl');
+		if (ML.style.border == "") {
+		ML.style.border = 2+"px "+"solid "+"#ff0853";
+		ML.style.background = "url(./dazuoyeimg/duigou.png) no-repeat right bottom";
+		rl.innerHTML = '"'+ML.innerHTML+'"';
+		if (ml.style.border!="") {
+			ml.style.border="";
+			ml.style.background="";
+		}
+	}	
+}
+
+
+
+		var txt=document.getElementById("txt");
+		var p = document.getElementById('p');
+		// alert("1");
+		// function add(){
+       
+  //        	alert("2");
+  //        	txt.value++;
+  //       	// var a=txt.value;
+  //       	// a++;
+  //       	// txt.value=a;
+  //  	 	}
+  		p.style.zIndex="2";
+  		console.log(p);
+  		p.onclick = function(){
+  			txt.value++;
+  			console.log("aaaaaa");
+  		}
+    	function sub(){
+        
+	        var a=txt.value;
+	        if(a>1){
+	            a--;
+	            txt.value=a;
+	        }else{
+	            txt.value=1;
+	        }
+        
+    }
+
+    var jr = document.getElementById('jr');
+    jr.onclick = function(){
+                var s = document.getElementById("bg");
+                s.style.display = "block";
+
+                var l = document.getElementById("loginbox");
+                l.style.display = "block";
+            }
+
+            function close() {
+                var s = document.getElementById("bg");
+                s.style.display = "none";
+
+                var l = document.getElementById("loginbox");
+                l.style.display = "none";
+            }
+
+		var box = document.getElementById("box");
+  		var img1 = document.getElementById("img1");
+  		var slider = document.getElementById("slider");
+  		var img2 = document.getElementById("img2");
+  		var Bimg = document.getElementById("Bimg");
+  		img1.onmouseover = function(){
+  			slider.style.display = "block";
+  			img2.style.display = "block";
+  		}
+  		img1.onmouseout = function(){
+  			slider.style.display = "none";
+  			img2.style.display = "none";
+  		}
+  		img1.onmousemove = function(ev){
+  			var ev = ev||window.event;
+  			var left = ev.clientX - box.offsetLeft - slider.offsetWidth/2;
+  			var top = ev.clientY - box.offsetTop - slider.offsetHeight/2;
+  			var maxLeft = img1.offsetWidth - slider.offsetWidth;
+  			var maxTop = img1.offsetHeight - slider.offsetHeight;
+  			left = left>maxLeft?maxLeft:left<0?0:left;
+  			top = top>maxTop?maxTop:top<0?0:top;
+  			slider.style.left = left + "px";
+  			slider.style.top = top + "px";
+  			var w = left/maxLeft;
+  			var h = top/maxTop;
+  			var BimgLeft = img2.offsetWidth - Bimg.offsetWidth;
+  			var BimgTop = img2.offsetHeight - Bimg.offsetHeight;
+  			Bimg.style.left = w*BimgLeft+"px";
+  			Bimg.style.top =  h*BimgTop+"px";		
+  		}
+
+  		var da = document.getElementById('da');
+  		var lian = document.getElementById('lian');
+  		var gou = document.getElementById('gou');
+  		var Bimg = document.getElementById('Bimg')
+  		da.onmouseover = function(){
+  			da.style.border = '2px solid red';
+  			lian.style.border = 0;
+  			gou.src = './dazuoyeimg/pp0.jpeg';
+  			Bimg.src = './dazuoyeimg/pp0.jpeg';
+  		}
+
+  		lian.onmouseover = function(){
+  			lian.style.border = '2px solid red';
+  			da.style.border = 0;
+  			gou.src = './dazuoyeimg/pp1.jpeg';
+  			Bimg.src = './dazuoyeimg/pp1.jpeg';
+  		}
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{ margin:30px;} 
+div {
+    cursor: pointer; /*鼠标：移动形状*/
+    width: 420px; /*宽*/
+    height: 420px; /*像素为单位*/
+    outline: 10px #0C3 solid;/*轮廓线-html5新增，老浏览器不一定支持*/
+}
+/*大图*/
+#bgmj {
+    width: 220px;
+    height: 220px;
+    border: 10px blue solid; /*边框5像素*/
+    position: absolute; /*定位：绝对定位*/
+    top: 20px;
+    left:480px;
+    background-image:url(./dazuoyeimg/pp0.jpeg);
+    display:none;
+}
+
+#famj {
+    width: 220px;
+    height: 220px;
+    border: 10px blue solid; /*边框5像素*/
+    position: absolute; /*定位：绝对定位*/
+    top: 20px;
+    left:480px;
+    background-image:url(./dazuoyeimg/pp0.jpeg);
+    display:none;
+}

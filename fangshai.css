@@ -1,0 +1,286 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+.whloe{
+	width: 100%;
+	height:1320px;
+	background-color: #f8f7f6;
+	position: relative;
+}
+.inside{
+
+	width:1180px;
+	height:545px;
+	margin:0 auto;
+	background-color: white;
+}
+.head{
+	width:1180px;
+	height:175px;
+	margin:0 auto;
+	/*padding-top:7px;*/
+	color:#9a9791;
+}
+.head a{
+	float:left;
+	color:#999999;
+	font-size: 11px;
+	display: inline;
+	margin-left: 18px;
+	text-decoration: none;
+}
+.heada{
+	width:725px;
+	height:20px;
+	padding-left:300px;
+}
+.cover{
+	width: 100%;
+	height:177px;
+	background-color: white;
+	border-bottom: 1px solid #fe6c00;
+	position: relative;
+	z-index: 3;
+	/*position: absolute;
+	height:0px;*/
+}
+.input{
+	padding-top: 30px;
+	float: left;
+	width: 1180px;
+	height:145px;
+}
+.ip{
+	width: 450px;
+	height:38px;
+	border:3px solid #fe6c00;
+	margin-left: 120px;
+	position: relative;
+	bottom: 25px;
+}
+.search{
+	height:44px;
+	width:80px;
+	float:right;
+	background:#fe6c00;
+	color:white;
+	text-align: center;
+	position: relative;
+	top:11px;
+	right:380px;
+	line-height: 40px;
+	display: inline-block;
+}
+.erji{
+	width: 85px;
+	height: 40px;
+	border:1px solid #e6e5e2;
+	position: relative;
+	bottom: 14px;
+	left:155px;
+	display: inline-block;
+	border-radius: 3px;
+}
+.news{
+	width: 85px;
+	height: 40px;
+	border:1px solid #e6e5e2;
+	margin-right:10px;
+	position: relative;
+	bottom: 14px;
+	left:150px;
+	display: inline-block;
+	border-radius: 3px;
+}
+.ques{
+	width: 85px;
+	height: 40px;
+	border:1px solid #e6e5e2;
+	position: relative;
+	bottom: 9px;
+	left:135px;
+	display: inline-block;
+	border-radius: 3px;
+	background-color: #ff4d04;
+}
+.input ul{
+	list-style: none;
+}
+.list{
+	width:560px;
+	height:18px;
+	margin-left: 250px;
+	position: relative;
+	bottom: 20px;
+}
+
+.input ul li{
+	display: inline;
+	font-size:12px;
+}
+.input ul li a{
+	margin-left: 0px;
+	margin:0px;
+}
+.black{
+	width:100%;
+	height:43px;
+	margin:0 auto;
+	background-color: black;
+	color:white;
+	position: absolute;
+	top:134px;
+	font-size: 13px;
+}
+.black ul{
+	width: 1180px;
+	list-style: none;
+	padding-top:13px;
+	margin:0 auto;
+}
+.black ul li{
+	float: left;
+	padding-left:80px;
+}
+.middle{
+	width:1180px;
+	height:760px;
+	margin:0 auto;
+	margin-top:20px; 
+}
+.xiangqing{
+	width:1000px;
+	height:620px;
+	background-color: white;
+}
+.finally{
+	width:1180px;
+	height:170px;
+	margin:0 auto;
+	position:relative;
+	bottom:50px;
+}
+.zuihou{
+	height:147px;
+	width:1180px;
+	margin:0 auto;
+	position:relative;
+	bottom:-15px;
+	font-size:13px;
+	color:#666560;
+	border-top:1px solid #ebeae7;
+}
+.zuihou ul{
+	list-style:none;
+	padding-left:180px;
+	margin:0 auto;
+	text-align:center;
+	margin-top:10px;
+}
+.zuihou ul li{
+	float:left;
+	padding-left:10px;	
+	padding-right:10px;
+}
+.zuihou ul li a{
+	text-decoration:none;
+	color:#666560;
+}
+.zuihou p{
+	text-align:center;
+	color:#a797aa;
+	padding-top:30px;
+}
+.zuihou img{
+	float:left;
+	text-align:center;
+	margin-top: 10px;
+}
+.box{
+	width:820px;
+	height:410px;
+	position:relative;
+}
+
+.img1{
+    width:410px;
+	height:410px;
+	position:absolute;
+	left:0;
+	top:0;
+	border:1px solid #d0cdc7;
+}
+.slider{
+	width:150px;
+	height:150px;
+	position:absolute;
+	left:0;
+	top:0;
+	background:#CCC;
+	opacity:0.4;
+	cursor: move;
+	display:none; 
+	filter:alpha(opacity=40);
+}
+.img2{
+	/*position:absolute;*/
+	position: fixed;
+	right:0;
+	top:0;
+	display:none; 
+	width:410px;
+	height:410px;
+	overflow:hidden;
+	border: 1px solid #d0cdc7;
+}
+.Bimg{
+	position:absolute;
+	left:0;
+	top:0;
+}
+.meng{
+	width: 510px;
+	height: 435px;
+	margin-left: 20px;
+	position: absolute;
+	top:220px;
+	left: 480px;
+}
+#txt{
+	height: 30px;
+	width:55px;
+	border:1px solid #d0cdc7;
+	text-align: center;
+	line-height: 30px;
+	margin-left: 135px;
+	display: inline-block;
+	position: absolute;
+	bottom:130px;
+}
+#bg {
+    width: 100%;
+    height: 1000px;
+    background-color:#000;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:3;
+    opacity:0.3;
+    /*兼容IE8及以下版本浏览器*/
+    /*//filter: alpha(opacity=30);*/
+    display: none;
+}
+#loginbox {
+    width: 400px;
+    height: 225px;
+    background-color: white;
+    margin: auto;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 400px;
+    left: 0;
+    right: 0;
+    display: none;
+}
